@@ -1,0 +1,27 @@
+.bim {
+  &-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 0.25rem;
+    color: #fff;
+    cursor: pointer;
+    min-height: 36px;
+    padding: 0 0.5rem;
+    min-width: 132px;
+    width: max-content;
+    text-decoration: none;
+    &:hover {
+      background-color: #484848;
+      border: 1px solid #484848;
+    }
+  }
+  &-text {
+    color: #a0a0a0;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+}
