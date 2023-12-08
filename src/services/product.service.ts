@@ -1,9 +1,15 @@
+import API from '@/config/API'
+import { AuthService } from '@/services/auth.service'
+
 export const ProductService = async (
   gtin: string,
 ): Promise<IProductResponse> => {
-  const res = await fetch(`http://localhost:5173/api/product?gtin=${gtin}`, {
-    method: 'GET',
-    cache: 'no-cache',
+  const clientCredentialsToken = await AuthService()
+
+  const res = await API.get<IProductResponse>(`/v1/products/by-gtin/${gtin}`, {
+    headers: {
+      Authorization: `Bearer ${clientCredentialsToken}`,
+    },
   })
-  return await res.json()
+  return res.data
 }

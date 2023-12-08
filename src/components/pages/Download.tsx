@@ -9,6 +9,7 @@ interface IDownloadProps {
 const Download: FC<IDownloadProps> = ({ files }) => {
   return (
     <div className='flex flex-col gap-4 mt-8 mb-4'>
+      <h1 className='flex border-b text-xl'>Downloadable files</h1>
       {files.map(({ name, downloadLink }, index) => (
         <div key={index} className='flex items-center justify-between'>
           <div className='bim-text'>

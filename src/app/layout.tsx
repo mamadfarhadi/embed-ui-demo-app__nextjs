@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.scss'
 import { DarkMode, ProgressbarProvider } from '@/components'
+import { ILayoutProps } from '@/types/common'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
     'Download free BIM objects from over 2 000 manufacturers. Choose among BIM objects for SketchUp, Autodesk, Revit, Vectorworks or ArchiCAD.',
 }
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default function RootLayout({ children }: ILayoutProps) {
   return (
     <html lang='en'>
       <body
