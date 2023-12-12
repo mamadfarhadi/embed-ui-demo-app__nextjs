@@ -20,7 +20,6 @@ async function authenticate() {
       new URLSearchParams(payload),
     )
     clientCredentialsToken = access_token
-    // API.headers['Authorization'] = `Bearer ${clientCredentialsToken}`
     const revalidateTime = expires_in * 1000 - 5 * 60 * 1000 // * 5 minutes before expiry (in ms)
     if (refreshTokenInterval) {
       clearInterval(refreshTokenInterval)

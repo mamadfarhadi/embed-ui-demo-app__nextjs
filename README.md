@@ -27,18 +27,16 @@ pnpm install
 
 ## Prerequisites
 
-To use this project, you need to sign up for a developer account in
-[Developer Site](https://developer.bimobject.com/) and use the `Client ID` and
-`Client Secret` to create a `.env.local` file in the root directory of this
-project. The `.env.local` file should look like this:
+You can find more information about how to create a developer account in
+[BIMobject Embed API Demo App](https://github.com/bimobject/api-documentation/blob/wip/01-getting-started/README.md).
+
+Then use the `Client ID` and `Client Secret` to create a `.env.local` file in
+the root directory of this project. The `.env.local` file should look like this:
 
 ```dotenv
 VITE_CLIENT_ID=YOUR_CLIENT_ID
 VITE_CLIENT_SECRET=YOUR_CLIENT_SECRET
 ```
-
-- You can find more information about how to create a developer account in
-  [Embed UI Document](https://github.com/bimobject/api-documentation/blob/wip/01-getting-started/README.md).
 
 ## Getting Started
 

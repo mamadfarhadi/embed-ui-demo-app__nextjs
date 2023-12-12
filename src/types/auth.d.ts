@@ -1,10 +1,3 @@
-// enum GRANT_TYPE {
-//     CLIENT_CREDENTIALS = "client_credentials"
-// }
-// enum SCOPE {
-//     MARKETPLACE = "marketplace"
-// }
-
 interface IAuth {
   grant_type: 'client_credentials'
   scope: 'embed'
